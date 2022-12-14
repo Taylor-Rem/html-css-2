@@ -1,0 +1,62 @@
+* {
+  font-family: "Roboto", sans-serif;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  margin: 0;
+  padding: 0;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+}
+.header {
+  background-color: black;
+  width: 100%;
+  padding: 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.header > img {
+  width: 40rem;
+  margin-left: -10rem;
+}
+.nav-links {
+  display: flex;
+  justify-content: space-around;
+}
+.nav-link,
+nav-link:visited {
+  font-size: 2rem;
+  color: white;
+  text-decoration: none;
+  white-space: nowrap;
+  font-weight: 600;
+}
+.header > div:last-child > svg {
+  color: white;
+  width: 5rem;
+  height: 5rem;
+}
+.header > div:last-child > svg:hover {
+  cursor: pointer;
+}
+.nav-links > div {
+  margin-right: 5%;
+}
+.nav-link ~ div {
+  width: 0%;
+  transition: width 0.3s;
+}
+.nav-link:hover ~ div {
+  background-color: white;
+  height: 3px;
+  width: 100%;
+  animation: underline 0.3s;
+  margin-bottom: -3px;
+  transition: width 0.3s;
+}

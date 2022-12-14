@@ -1,0 +1,80 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+body > div {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+body > div > div {
+  margin: 1vh;
+}
+body > div > div:first-child {
+  display: flex;
+  align-items: flex-end;
+  outline: 5px solid black;
+  width: 90%;
+  height: 30%;
+  padding: 10px;
+}
+body > div > div:first-child > div {
+  margin: 10px;
+}
+body > div > div:first-child > div:first-child {
+  width: 100px;
+  height: 50%;
+  background-color: purple;
+  margin-right: 50px;
+}
+body > div > div:first-child > div:nth-child(2) {
+  width: 40%;
+  height: 95%;
+  background-color: green;
+}
+body > div > div:first-child > div:last-child {
+  height: 350px;
+  width: 350px;
+  margin-left: 50px;
+  background-color: rgb(27, 225, 225);
+  border-radius: 50%;
+}
+body > div > div:nth-child(2) {
+  outline: 5px dotted black;
+  width: 90%;
+  height: 30%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body > div > div:nth-child(2) > div {
+  width: 90%;
+  height: 85%;
+  background-color: rgb(255, 235, 208);
+  box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+}
+body > div > div:last-child {
+  width: 90%;
+  height: 30%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body > div > div:last-child > div {
+  width: 50%;
+  height: 100%;
+  box-shadow: 0 0 10px 10px rgba(0, 0, 0, 0.3);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body > div > div:last-child > div > p {
+  font-size: 50px;
+  text-align: center;
+  font-weight: 600;
+  color: rgb(15, 0, 130);
+  letter-spacing: 10px;
+}
